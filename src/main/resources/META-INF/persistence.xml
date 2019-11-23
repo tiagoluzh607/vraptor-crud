@@ -20,5 +20,52 @@
 		</properties>
 	</persistence-unit>
 	
+	<!--  POSTGRES
+	
+		<persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/olimposi_qualsuper" /> 
+            <property name="javax.persistence.jdbc.user" value="olimposi_qualsuper_producao" /> 
+            <property name="javax.persistence.jdbc.password" value="@postgres@postgres" />
+
+	    	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> 
+            <property name="hibernate.hbm2ddl.auto" value="update" /> 
+            
+            <property name="hibernate.show_sql" value="false" /> 
+            <property name="hibernate.format_sql" value="false" /> 
+            
+            
+        </properties>
+	</persistence-unit>
+	
+	 -->
+	 
+	 <!--  MYSQL
+	 
+	 <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+        <description>
+            Persistence unit for the JPA tutorial of the Hibernate Getting Started Guide
+        </description>
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>org.halyph.sessiondemo.Event</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpatestdb" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+        </properties>
+
+    </persistence-unit>
+	 
+	  -->
+	
 	
 </persistence>
