@@ -1,6 +1,7 @@
 package br.com.caelum.vraptor.model;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -147,6 +148,14 @@ public abstract class Model {
 
 	public void setMotivoInativacao(String motivoInativacao) {
 		this.motivoInativacao = motivoInativacao;
+	}
+	
+	protected String formatCalendar(Calendar calendar) {
+		try {
+    		return new SimpleDateFormat("dd/MM/yyyy").format(calendar.getTime());
+    	}catch (Exception e) {
+			return null;
+		}
 	}
 	
 }
