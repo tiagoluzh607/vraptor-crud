@@ -15,6 +15,8 @@ import br.com.caelum.vraptor.exception.IdInvalidoException;
 import br.com.caelum.vraptor.exception.RegistroInativoException;
 import br.com.caelum.vraptor.model.Model;
 
+
+
 public abstract class DAO<T extends Model, I extends Serializable> {
 	
 	protected EntityManager em;

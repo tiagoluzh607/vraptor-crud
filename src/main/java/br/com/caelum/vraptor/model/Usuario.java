@@ -23,7 +23,7 @@ public class Usuario extends Model {
 	@Temporal(TemporalType.DATE)
 	private Calendar dataNascimento;
 	
-	
+
 	public String getEmail() {
 		return email;
 	}
@@ -41,6 +41,9 @@ public class Usuario extends Model {
 	}
 	public String getDataNascimentoFormatada() {
 		return formatCalendar(this.dataNascimento);
+	}
+	public String getDataNascimentoFormatadaUSA() {
+		return formatCalendarUSA(this.dataNascimento);
 	}
 	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;

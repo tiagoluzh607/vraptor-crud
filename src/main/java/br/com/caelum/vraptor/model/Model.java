@@ -158,4 +158,12 @@ public abstract class Model {
 		}
 	}
 	
+	protected String formatCalendarUSA(Calendar calendar) {
+		try {
+    		return new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime());
+    	}catch (Exception e) {
+			return null;
+		}
+	}
+	
 }
